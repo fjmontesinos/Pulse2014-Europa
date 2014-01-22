@@ -7,6 +7,7 @@ body
 	background: #eee;
 	font-family: Arial;
 	font-size: 16px;
+	min-width: 470px;
 }
 
 footer
@@ -130,18 +131,30 @@ nav ul li a
 	margin: 1em;
 }
 
+#contenido article
+{
+	margin-top:2.5em;
+}
+
+#contenido article:first-child
+{
+	margin-top:0;
+}
+
 #contenido .item 
 {
 	background: white;
 	border-bottom: 3px solid #22BCE0;
+	border-radius:0.3em 0.3em 0 0;
 	margin-bottom:2em;
 	min-height: 128px;
-	position:relative;
+	position:relative;	
 }
 
 #contenido .item .autor_item
 {
 	color:#aaa;
+	font-size:0.9em;
 }
 
 #contenido .item .datos_item
@@ -159,7 +172,7 @@ nav ul li a
 #contenido .item .datos_item .tag_item
 {
 	background: #F4520A;
-	border-radius: 0.2em;
+	border-radius: 0.3em;
 	color:white;
 	float:left;
 	display:inline-block;
@@ -177,6 +190,7 @@ nav ul li a
 
 #contenido .item .imagen_item img
 {
+	border-radius: 0.3em 0 0 0;
 	width:96px;
 }
 
@@ -196,7 +210,7 @@ nav ul li a
 #contenido .item .votacion_item
 {
 	background: white;	
-	border-radius:0 0 0.5em 0.5em;
+	border-radius:0 0 0.4em 0.4em;
 	left:0.5em;
 	margin-top:3px;
 	padding:0.2em 0.5em;
