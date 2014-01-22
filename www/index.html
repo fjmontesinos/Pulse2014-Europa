@@ -2,8 +2,11 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta description="Proyeto de la primera generación del 2014 del curso de diseño web online">
+	<meta name="description" content="Proyeto de la primera generación del 2014 del curso de diseño web online">
+	
 	<title>Puls 2014 · Comunidad online de Gente Atractiva</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
 	
@@ -20,14 +23,13 @@
 	</header>
 
 	<nav>
-		<ul>
-			<li><a href="#"></a>*</li>
+		<ul>			
 			<li><a href="#">Python</a></li>
 			<li><a href="#">HTML5</a></li>
 			<li><a href="#">JavaScript</a></li>
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
-			<li><a href="#" id="publicar_nav">Publicar</a></li>
+			<li id="publicar_nav"><a href="#">Publicar</a></li>
 		</ul>
 	</nav>
 
@@ -44,18 +46,27 @@
 					<a href="#">Título del artículo</a>
 			</h2>			
 
-			<p class="autor_item">
+			<div class="autor_item">
 				por Javier Montesinos
-			</p>
+			</div>
 
-			<p class="datos_item">
+			<div class="datos_item">
 				<a href="#" class="tag_item">
 					Responsive
 				</a>
 
-				<span>
-					Hace <strong>5</strong> min.
+				<span class="fecha_item">
+					Hace <strong>5</strong> min
 				</span>
+
+
+			</div>
+
+			<div class="votacion_item">
+				<a href="#" class="up_item">up</a>
+				4123
+				<a href="#" class="down_item">down</a>
+
 
 				<a href="#" class="comentarios_item">
 					234
@@ -64,14 +75,7 @@
 				<a href="#" class="guardar_item">
 					*
 				</a>
-
-			</p>
-
-			<p class="votacion_item">
-				<a href="#" class="up_item">up</a>
-				4123
-				<a href="#" class="down_item">down</a>
-			</p>
+			</div>
 		</article>
 
 	</section>
