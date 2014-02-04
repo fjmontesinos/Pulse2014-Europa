@@ -8,6 +8,7 @@
  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
  <link rel="stylesheet" href="normalize.css" />
  <link rel="stylesheet" href="estilo.css" />
+ <script src="js/prefixfree.min.js"></script>
 </head>
 <body>
  <header>
@@ -31,7 +32,13 @@
    </li>
   </ul>
  </nav>
-
+  <form action="" id="formulario">
+    <label for="titulo">Título : </label>
+    <input type="text" id="titulo" required placeholder="Título">
+    <label for="link">Link : </label>
+    <input type="url" id="link" required placeholder="Link" />
+    <input type="submit" value="Enviar" />
+  </form>
 	<aside>
 		<!-- autoplay para reproducir de forma automática -->
 		<!-- controls para mostrar los controles -->

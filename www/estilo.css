@@ -291,7 +291,11 @@ nav ul li a:hover
 		width:49%;
 	}
 
-	/*Aplica a los elementos impares de la clase item*/
+	/*Aplica a los elementos impares de la clase item 
+	even para los pares
+	nth-child(1) el primero
+	nth-child(2) el segundo
+	....*/
 	#contenido .item:nth-child(odd) {		
 		margin-right: 2%;
 	}
