@@ -209,7 +209,22 @@
  </footer>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-
 <script src="js/formulario.js"></script>
+<script>
+  window.onload = function(){
+    console.log('Ya se disparó el evento OnLoad');
+  }
+
+  /*
+  Esto es lo mismo que lo de abajo
+  $(document).on('ready', function(){
+    console.log('Ya se disparó el evento DOMContentLoaded');
+  });
+  */
+
+  $(function(){
+    console.log('Ya se disparó el evento DOMContentLoaded');
+  });
+</script>
 </body>
 </html>
