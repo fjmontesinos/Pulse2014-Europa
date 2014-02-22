@@ -25,6 +25,8 @@ function agregarPost(){
 	$lista.prepend(clone);		
 
 	clone.slideDown();
+
+	return false;
 }
 
 $('#publicar_nav a').click(mostrarFormulario);
